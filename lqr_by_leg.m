@@ -49,7 +49,7 @@ function K = lqr_by_leg(leg_length)
   
     % Q=diag([20 0.1 80 110 700 1]);
     % R=[90 0;0 4];                %T Tp
-    Q=diag([150 1 10 1 300 10]);
+    Q=diag([150 1 1 10 300 10]);
     R=[90 0;0 5];
 
    % Q=diag([20 0.1 20 1 500 1]);
@@ -60,8 +60,5 @@ function K = lqr_by_leg(leg_length)
 
 
    K=lqr(A,B,Q,R);
-       filename = sprintf('AB.mat');
-    save(filename, 'A', 'B');
-    fprintf('✅ 已保存 A、B 矩阵到文件：%s\n', filename);
   
 end
