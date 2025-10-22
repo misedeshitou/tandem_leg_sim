@@ -1,3 +1,4 @@
+clear;
 % 声明全局变量
 % global L1 L2 L3 L4 L5
 
@@ -9,7 +10,7 @@ L4 = 0.16;
 L5 = 0;
 
 
-K1 = lqr_by_leg(0.218)
+K = lqr_by_leg(0.218);
 
 
 
